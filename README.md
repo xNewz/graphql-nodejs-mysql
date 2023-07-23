@@ -12,7 +12,7 @@ This is a simple project to demonstrate how to use React, GraphQL, Node.js and M
 1. Run `yarn start' or 'npm start' in the server folder
 2. Open http://localhost:3001/graphql to see the GraphQL playground
 3. Run the following query to create a new user:
-```
+```graphql
 mutation {
   createUser(name: "John Doe", username: "john.doe", password: "1234") {
     id
@@ -23,7 +23,7 @@ mutation {
 }
 ```
 4. Run the following query to get the user:
-```
+```graphql
 query {
   getAllUsers{
     id
@@ -34,7 +34,7 @@ query {
 }
 ```
 5. Run the following query to delete the user:
-```
+```graphql
 mutation {
   deleteUser(id: 5) {
     message
@@ -42,7 +42,7 @@ mutation {
 }
 ```
 6. Run the following query to update the user password:
-```
+```graphql
 mutation {
   updatePassword(username: "john.doe", oldPassword: "1234", newPassword: "112233") {
     message
